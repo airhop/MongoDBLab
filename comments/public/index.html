@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Comments!</title>
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+<script src="javascripts/comments.js"></script>
+<link rel="stylesheet" type="text/css" href="stylesheets/style.css">
+</head>
+
+<body>
+<center>
+<div>
+<h2>Enter your name and a comment. Press Send to add the comment, and Get Comments to recieve all the comments!</h2>
+</div>
+</center>
+<center>
+<form id="commentForm" class="form-style-4" action="">
+  <label for="name">Name: </label><input type="text" id="Name" placeholder="Name"><br><br>
+  <label for="comment">Comment: </label><input type="text" id="Comment" placeholder="Comment">
+</form>
+
+<button id="serialize" class="button">Add Comment</button>
+<button id="getThem" class="button">Get Comments</button>
+<div id="json"></div>
+<div id="done"></div>
+<div id="comments"></div>
+</center>
+</body>
+</html>

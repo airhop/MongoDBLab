@@ -1,0 +1,155 @@
+html {
+background-image:url(image.jpg);
+
+   background-repeat:no-repeat;
+
+   background-size:cover;
+}
+
+#buttons{
+  font-size: 40px;
+  background: -webkit-linear-gradient(#336699, #333);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+h2{
+margin-top: 25px;
+font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
+font-size: 35px;
+color: white;
+}
+#json,#done,#comments{
+font-family: Consolas, monaco, monospace;
+font-size: 20px;
+color: #D1D3CF;
+}
+#boardgame h1 {
+	text-align: center;
+	font-family: "Century Gothic", Courier;
+	font-size: 100px; text-transform: uppercase;
+	color: #fff;
+	text-shadow: 5px 5px 0 #ffd217, 10px 10px 0 #5ac7ff, 10px 10px 0 #ffd217, 10px 10px 0 #5ac7ff;
+
+}
+#submission-form{
+opacity: 0.925;
+ 	background-color: white;
+	width:65%;
+	height: 575px;
+	box-shadow: 1px 1px 1px 2px #888888;
+	margin-top: 100px;
+}
+.button {
+  color: #495C70;
+  
+  @mixin font-color {
+    @if lightness($color) > 50 {
+      color: rgba(black,0.8);
+      text-shadow: 0 0.1em 0 rgba(white,0.5);
+    } @else {
+        color: rgba(white,0.85);
+      text-shadow: 0 -0.08em 0 darken($color, 20%);
+        }
+  }
+  
+  font: bold 20px Arial,sans-serif;
+  @include font-color;
+  display: inline-block;
+  outline: none;
+  cursor: pointer;
+  padding: 0.4em 2em 0.5em;
+  @include border-radius(0.30em);
+  border: 1px solid;
+  border-color: darken($color, 20%) darken($color, 30%) darken($color, 40%);
+  background-color: 495C70;
+  @include background-image(linear-gradient($color, darken($color, 10%)));
+  @include box-shadow(0 0.1em 0.5em rgba(black,0.10), 0 0.1em 0.2em rgba(black,0.3), 0 -0.1em 0.07em rgba(black,0.3) inset, 0 0.1em 0.07em rgba(white,0.2) inset);
+  @include transition(all 100ms);
+  
+  &:hover {
+    @include box-shadow(0 0.1em 0.5em rgba(black,0.4), 0 0.1em 0.2em rgba(black,0.4), 0 -0.1em 0.07em rgba(black,0.3) inset, 0 0.1em 0.07em rgba(white,0.2) inset);
+  }
+  
+  &:active {
+    padding: 0.4em 2em 0.4em;
+    margin-top: 0.1em;
+    border-color: darken($color, 30%) darken($color, 20%) $color;
+    @include background-image(linear-gradient(darken($color, 5%), $color));
+    @include box-shadow(0 0.1em 0.2em rgba(black,0.1) inset, 0 0.1em 0.1em rgba(black,0.2) inset, 0.05em 0 0.07em rgba(black,0.2) inset, -0.05em 0 0.07em rgba(black,0.2) inset);
+    @include transition(all 10ms);
+  }
+}
+.form-style-4{
+    width: 1000px;
+    height: 40%;
+    font-size: 16px;
+    background: #495C70;
+    padding: 30px 30px 15px 30px;
+    margin: 100px 0px 20px 0px;
+    border: 5px solid #53687E;
+}
+.form-style-4 input[type=submit],
+.form-style-4 input[type=button],
+.form-style-4 input[type=text],
+.form-style-4 input[type=email],
+.form-style-4 textarea,
+.form-style-4 label
+{
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 16px;
+    color: #fff;
+
+}
+.form-style-4 label {
+    display:block;
+    margin-bottom: 10px;
+}
+.form-style-4 label > span{
+    display: inline-block;
+    float: left;
+    width: 150px;
+}
+.form-style-4 input[type=text],
+.form-style-4 input[type=email] 
+{
+    background: transparent;
+    border: none;
+    border-bottom: 1px dashed #83A4C5;
+    width: 275px;
+    outline: none;
+    padding: 0px 0px 0px 0px;
+    font-style: italic;
+}
+.form-style-4 textarea{
+    font-style: italic;
+    padding: 0px 0px 0px 0px;
+    background: transparent;
+    outline: none;
+    border: none;
+    border-bottom: 1px dashed #83A4C5;
+    width: 275px;
+    overflow: hidden;
+    resize:none;
+    height:20px;
+}
+
+.form-style-4 textarea:focus, 
+.form-style-4 input[type=text]:focus,
+.form-style-4 input[type=email]:focus,
+.form-style-4 input[type=email] :focus
+{
+    border-bottom: 1px dashed #D9FFA9;
+}
+
+.form-style-4 input[type=submit],
+.form-style-4 input[type=button]{
+    background: #576E86;
+    border: none;
+    padding: 8px 10px 8px 10px;
+    border-radius: 5px;
+    color: #A8BACE;
+}
+.form-style-4 input[type=submit]:hover,
+.form-style-4 input[type=button]:hover{
+background: #394D61;
+}
